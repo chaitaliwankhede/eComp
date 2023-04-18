@@ -1,0 +1,27 @@
+<div class="flex-row header-logo" id="header-main">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom p-0">
+        <span class="menu-toggle-btn" (click)="onCollapse($event.stopPropagation())" data-toggle="collapse">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+        <span class="logo">
+            <img src="../../assets/images/ic_DNV_Logo.svg" />
+        </span>
+        <div class="d-inline-block collapse navbar-collapse vertical-line">
+            <span class="admin-logo">
+              <b translate>eComp </b>
+            </span>
+        </div>
+        <div class="float-right padding-right">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 nav">
+              <li class="nav-item mr-auto">
+                <a class="nav-link pr-0" href="javascript:void(0)">
+                  <span class="circle" aria-hidden="true">{{
+                    loggedInUserShortName
+                  }}</span>
+                </a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<app-header-sidebar [ngClass]="{ 'hide-show-menu': !hideNav }" (click)="$event.stopPropagation()"></app-header-sidebar>

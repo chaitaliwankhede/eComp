@@ -1,0 +1,47 @@
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="title">
+          Advanced Search
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-form-field appearance="fill">
+        <mat-label>Emp ID</mat-label>
+        <input matInput type="number" min="1">
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Department</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let dp of dpts" [value]="dp.value">
+            {{dp.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Section</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let dp of dpts" [value]="dp.value">
+            {{dp.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Country</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let dp of dpts" [value]="dp.value">
+            {{dp.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-action-row class="action">
+        <button mat-raised-button>Clear</button>
+        <button mat-raised-button color="primary">Search</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>

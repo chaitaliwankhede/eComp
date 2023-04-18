@@ -1,0 +1,12 @@
+<div class="border-right" id="sidebar-wrapper">
+    <div class="list-group list-group-flush">
+        <a
+            *ngFor="let navitem of navList"
+            class="list-group-item list-group-item-action text-center"
+            (click)="setNavItemName(navitem, $event)"
+            [ngClass]="{ 'list-active': navitem === navitemName }"
+            >
+            <label class="menu-label">{{ navitem }}</label>
+        </a>
+    </div>
+</div>

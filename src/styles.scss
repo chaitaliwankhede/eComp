@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
+
+/* You can add global styles to this file, and also import other style files */
+// @import "~ag-grid-community/styles//ag-grid.css";
+// @import "~ag-grid-community/styles//ag-theme-alpine.css"; 
+
+root {
+    /* --global-BackGroundColor-- */
+    --global--main--BackGround: #ffffff 0% 0% no-repeat padding-box;
+    --global--quote--BackGround: #08204e 0% 0% no-repeat padding-box;
+    --global--header--Background: #0F204B 0% 0% no-repeat padding-box;
+    --global--content--Background: #e2e3e5 0% 0% no-repeat padding-box;
+    
+    /* --global-FontFamily-- */
+    --global--regular--FontFamily: Avenir Next, Regular;
+    --global--medium--FontFamily: Avenir Next, Medium;
+    --global--bold--FontFamily: Avenir Next, bold;
+    --global--semi-bold--FontFamily: Avenir Next, Semi-bold;
+    
+    
+    /* --global-FontColor-- */
+    --global--quote-text--FontColor: #ffffff;
+    --global--body-text--FontColor: #000000;
+    --global--field-lable--FontColor: #434343;
+    
+    /* --global-FontSize-- */
+    
+    --global--FontSize1: 1em; //16px
+    --global--FontSize2  :1.12em;//18px
+    --global--FontSize3: 1.25em; //20px
+    --global--FontSize4: 1.5em; //24px
+    
+    }
+    
+    
+    @font-face {
+        font-family: AvenirNext;
+        src: url(./assets/fonts/AvenirNextLTPro-Regular.otf) format("truetype");
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: AvenirNextBold;
+        src: url(./assets/fonts/AvenirNextLTPro-Bold.otf) format("truetype");
+        font-style: bold;
+      }
+    
+    
+      
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: AvenirNext !important;
+      font-size: var(--global--large--FontSize) !important;
+    }
+    .mat-row, mat-footer-row{
+      min-height: 36px;
+    }
+    .mat-header-cell{
+      color:black;
+    }
+    .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+        background-color: #0F204B !important;
+    }
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+      border-color: #0F204B !important;
+    }
+    .mat-radio-button.mat-accent .mat-radio-inner-circle{
+      background-color: #0F204B !important;
+    }
+    .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element, .mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
+        background-color: #0F204B !important;   
+    }
+    .mat-form-field-appearance-fill .mat-form-field-underline::before {
+        background-color: #99D9F0 !important;
+    }
+    
+    
+    .autocomplete-test-viewport{
+      height: 170px;
+    }
+    
+    ::ng-deep .cdk-virtual-scroll-spacer{
+      height: auto !important;
+    }

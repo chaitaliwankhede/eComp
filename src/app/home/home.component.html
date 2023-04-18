@@ -1,0 +1,28 @@
+<div style="width:100vw">
+<!-- Search Accordian -->
+<div style="width: 98vw;margin-top: 5px;margin-bottom: 10px;">
+<div class="row">
+  <app-advanced-search></app-advanced-search>
+</div>
+</div>
+<!-- Grid ready event -->
+ <ag-grid-angular 
+    style="width:98vw; height: 60vw;" 
+    class="ag-theme-alpine"
+    [defaultColDef]="defaultColDef"
+      [columnDefs]="columnDefs"
+      [rowData]="rowData"
+      [enableRangeSelection]="true"
+      [allowContextMenuWithControlKey]="true"
+      (gridReady)="onGridReady($event)">
+</ag-grid-angular>
+<!-- <app-ag-grid 
+style="width:98vw; height: 60vw;" 
+    class="ag-theme-alpine"
+    [defaultColDef]="defaultColDef"
+      [columnDefs]="columnDefs"
+      [rowData]="rowData"
+      (gridReady)="onGridReady($event)"
+></app-ag-grid> -->
+
+</div> 
